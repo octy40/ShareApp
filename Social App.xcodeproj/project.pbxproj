@@ -16,7 +16,8 @@
 		7B337560202DD37000C91E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B33755F202DD37000C91E5D /* GoogleService-Info.plist */; };
 		7B85245320346F7700A8CF48 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85245220346F7700A8CF48 /* FancyView.swift */; };
 		7B8524552034700200A8CF48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8524542034700200A8CF48 /* Constants.swift */; };
-		7BEEE5362035BC9600CA54E2 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEE5352035BC9600CA54E2 /* RoundBtn.swift */; };
+		7BEEE5362035BC9600CA54E2 /* RoundBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEE5352035BC9600CA54E2 /* RoundBtnView.swift */; };
+		7BEEE5382035BE8600CA54E2 /* FancyTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEE5372035BE8600CA54E2 /* FancyTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,8 @@
 		7B33755F202DD37000C91E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B85245220346F7700A8CF48 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		7B8524542034700200A8CF48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7BEEE5352035BC9600CA54E2 /* RoundBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		7BEEE5352035BC9600CA54E2 /* RoundBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtnView.swift; sourceTree = "<group>"; };
+		7BEEE5372035BE8600CA54E2 /* FancyTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTextFieldView.swift; sourceTree = "<group>"; };
 		E2E9F6FC3EF8E845E15DAC30 /* Pods_Social_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,7 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				7B85245220346F7700A8CF48 /* FancyView.swift */,
-				7BEEE5352035BC9600CA54E2 /* RoundBtn.swift */,
+				7BEEE5352035BC9600CA54E2 /* RoundBtnView.swift */,
+				7BEEE5372035BE8600CA54E2 /* FancyTextFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,7 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B337550202DD29900C91E5D /* LoginViewController.swift in Sources */,
-				7BEEE5362035BC9600CA54E2 /* RoundBtn.swift in Sources */,
+				7BEEE5362035BC9600CA54E2 /* RoundBtnView.swift in Sources */,
+				7BEEE5382035BE8600CA54E2 /* FancyTextFieldView.swift in Sources */,
 				7B33754E202DD29900C91E5D /* AppDelegate.swift in Sources */,
 				7B85245320346F7700A8CF48 /* FancyView.swift in Sources */,
 				7B8524552034700200A8CF48 /* Constants.swift in Sources */,
