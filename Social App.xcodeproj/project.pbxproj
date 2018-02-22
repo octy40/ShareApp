@@ -14,6 +14,9 @@
 		7B337555202DD29900C91E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B337554202DD29900C91E5D /* Assets.xcassets */; };
 		7B337558202DD29900C91E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B337556202DD29900C91E5D /* LaunchScreen.storyboard */; };
 		7B337560202DD37000C91E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B33755F202DD37000C91E5D /* GoogleService-Info.plist */; };
+		7B598C4E2038CD92003B3563 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B598C4B2038CD90003B3563 /* FBSDKLoginKit.framework */; };
+		7B598C4F2038CD92003B3563 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B598C4C2038CD90003B3563 /* Bolts.framework */; };
+		7B598C502038CD92003B3563 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B598C4D2038CD91003B3563 /* FBSDKCoreKit.framework */; };
 		7B85245320346F7700A8CF48 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85245220346F7700A8CF48 /* FancyView.swift */; };
 		7B8524552034700200A8CF48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8524542034700200A8CF48 /* Constants.swift */; };
 		7BEEE5362035BC9600CA54E2 /* RoundBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEE5352035BC9600CA54E2 /* RoundBtnView.swift */; };
@@ -31,6 +34,9 @@
 		7B337557202DD29900C91E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B337559202DD29900C91E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B33755F202DD37000C91E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B598C4B2038CD90003B3563 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7B598C4C2038CD90003B3563 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7B598C4D2038CD91003B3563 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7B85245220346F7700A8CF48 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		7B8524542034700200A8CF48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7BEEE5352035BC9600CA54E2 /* RoundBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtnView.swift; sourceTree = "<group>"; };
@@ -43,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B598C4F2038CD92003B3563 /* Bolts.framework in Frameworks */,
+				7B598C502038CD92003B3563 /* FBSDKCoreKit.framework in Frameworks */,
+				7B598C4E2038CD92003B3563 /* FBSDKLoginKit.framework in Frameworks */,
 				2ACDCF880765D908274A7C31 /* Pods_Social_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +71,9 @@
 		64B88CE9B3D0E087B51DA038 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B598C4C2038CD90003B3563 /* Bolts.framework */,
+				7B598C4D2038CD91003B3563 /* FBSDKCoreKit.framework */,
+				7B598C4B2038CD90003B3563 /* FBSDKLoginKit.framework */,
 				E2E9F6FC3EF8E845E15DAC30 /* Pods_Social_App.framework */,
 			);
 			name = Frameworks;
@@ -416,6 +428,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W4KZPUK79J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Social App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omuhirwa.Social-App";
@@ -432,6 +448,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W4KZPUK79J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Social App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omuhirwa.Social-App";
