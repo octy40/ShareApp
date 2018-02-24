@@ -35,16 +35,19 @@ class LoginViewController: UIViewController {
             } else {
                 print("OCTY: Successfully authenticated with Facebook")
                 let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                self.firebaseAuth(credential)
             }
         }
     }
     
     func firebaseAuth(_ credential: AuthCredential){
-        Auth.auth().signIn(with: credential) { (user, error) in
+        Auth.auth().signIn(with: credential, completion: { (user, error) in
             if error != nil {
                 print("OCTY: Unable to authenticate with Firebase - \(error)")
+            } else {
+                print("OCTY: Successfully authenticated with Firebase")
             }
-        }
+        })
     }
     
 }
