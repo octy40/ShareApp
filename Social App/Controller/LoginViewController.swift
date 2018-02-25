@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import FirebaseAuth
+import SwiftKeychainWrapper
 
 class LoginViewController: UIViewController {
 
@@ -22,6 +23,16 @@ class LoginViewController: UIViewController {
 //        loginButton.center = self.view.center
 //        self.view.addSubview(loginButton)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //Check if there's a keychain
+        let retrievedString: String? = KeychainWrapper.standard.string(forKey: KEY_UID)
+        if let _ = retrievedString {
+            print("OCTY: Data retrieved from keychain")
+             //If there is, perform segue
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
     
     @IBAction func facebookBtnTapped(_ sender: Any) {
@@ -46,6 +57,11 @@ class LoginViewController: UIViewController {
                 print("OCTY: Unable to authenticate with Firebase - \(error)")
             } else {
                 print("OCTY: Successfully authenticated with Firebase")
+                if let user = user {
+                    let saveSuccessful: Bool = KeychainWrapper.standard.set(user.uid, forKey: KEY_UID)
+                    print("OCTY: Data saved to keychain \(saveSuccessful)")
+                }
+                self.performSegue(withIdentifier: "goToFeed", sender: nil)
             }
         })
     }

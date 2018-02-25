@@ -19,6 +19,7 @@
 		7B598C502038CD92003B3563 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B598C4D2038CD91003B3563 /* FBSDKCoreKit.framework */; };
 		7B85245320346F7700A8CF48 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B85245220346F7700A8CF48 /* FancyView.swift */; };
 		7B8524552034700200A8CF48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8524542034700200A8CF48 /* Constants.swift */; };
+		7BE639AD20421DA900A60B72 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE639AC20421DA900A60B72 /* FeedViewController.swift */; };
 		7BEEE5362035BC9600CA54E2 /* RoundBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEE5352035BC9600CA54E2 /* RoundBtnView.swift */; };
 		7BEEE5382035BE8600CA54E2 /* FancyTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEE5372035BE8600CA54E2 /* FancyTextFieldView.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		7B598C4D2038CD91003B3563 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7B85245220346F7700A8CF48 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		7B8524542034700200A8CF48 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7BE639AC20421DA900A60B72 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7BEEE5352035BC9600CA54E2 /* RoundBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBtnView.swift; sourceTree = "<group>"; };
 		7BEEE5372035BE8600CA54E2 /* FancyTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTextFieldView.swift; sourceTree = "<group>"; };
 		E2E9F6FC3EF8E845E15DAC30 /* Pods_Social_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7B33754F202DD29900C91E5D /* LoginViewController.swift */,
+				7BE639AC20421DA900A60B72 /* FeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Social App/Pods-Social App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -250,6 +254,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -289,6 +294,7 @@
 				7B33754E202DD29900C91E5D /* AppDelegate.swift in Sources */,
 				7B85245320346F7700A8CF48 /* FancyView.swift in Sources */,
 				7B8524552034700200A8CF48 /* Constants.swift in Sources */,
+				7BE639AD20421DA900A60B72 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
