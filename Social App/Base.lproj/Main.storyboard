@@ -39,19 +39,26 @@
                                     <constraint firstItem="k04-Ny-Fkk" firstAttribute="centerX" secondItem="2J8-Hn-I9E" secondAttribute="centerX" id="aMg-HM-s9C"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukP-6n-SPR">
-                                <rect key="frame" x="0.0" y="597" width="624" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukP-6n-SPR">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you haven't signed in before, an account will be created automatically for you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvF-af-AEJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you haven't signed in before, an account will be created automatically for you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvF-af-AEJ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="dn0-Lq-lWl"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.48627450980392156" green="0.94901960784313721" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yvF-af-AEJ" secondAttribute="bottom" id="RFJ-df-E4i"/>
+                                    <constraint firstAttribute="trailing" secondItem="yvF-af-AEJ" secondAttribute="trailing" id="jwy-KQ-ApC"/>
+                                    <constraint firstAttribute="height" constant="70" id="mdg-Md-nBM"/>
+                                    <constraint firstItem="yvF-af-AEJ" firstAttribute="leading" secondItem="ukP-6n-SPR" secondAttribute="leading" id="qWw-kt-Q98"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlG-DB-80Z" customClass="RoundBtnView" customModule="Social_App" customModuleProvider="target">
                                 <rect key="frame" x="131" y="193" width="113" height="100"/>
@@ -92,7 +99,7 @@
                                 <rect key="frame" x="98" y="144" width="179" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Wx1-jH-qcF" secondAttribute="height" multiplier="179:23" id="NLy-Pd-lwy"/>
-                                    <constraint firstAttribute="width" constant="179" id="P2w-ZM-0PP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="179" id="P2w-ZM-0PP"/>
                                     <constraint firstAttribute="height" constant="23" id="oR9-hq-Nwj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -109,7 +116,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IlG-DB-80Z" secondAttribute="trailing" constant="131" id="Eas-96-dJz"/>
                             <constraint firstItem="2J8-Hn-I9E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UWL-uJ-p9k"/>
                             <constraint firstItem="2J8-Hn-I9E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dIf-gw-ZfR"/>
+                            <constraint firstItem="ukP-6n-SPR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fUs-HP-Ym5"/>
                             <constraint firstItem="IlG-DB-80Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="nRc-ve-8Ti"/>
+                            <constraint firstItem="ukP-6n-SPR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nX7-nW-Ws9"/>
+                            <constraint firstItem="ukP-6n-SPR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pWt-MC-2xS"/>
                             <constraint firstItem="2J8-Hn-I9E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uda-qB-HZW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

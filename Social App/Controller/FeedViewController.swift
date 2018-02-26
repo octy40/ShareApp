@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import SwiftKeychainWrapper
 
 class FeedViewController: UIViewController {
@@ -27,6 +28,14 @@ class FeedViewController: UIViewController {
         if removeSuccessful {
             print("OCTY: Removed keychain successfully")
         }
+        //Sign out from Firebase
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        //Go to Home Page
         performSegue(withIdentifier: "goToSignIn", sender: nil)
     }
     
